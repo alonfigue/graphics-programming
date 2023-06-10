@@ -3,6 +3,7 @@
 package graphics;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.awt.Image;
 
 import javax.swing.JFrame;
 
@@ -17,6 +18,8 @@ public class CreatingCenteredFrame {
 		myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		myFrame.setVisible(true);
+		
+		myFrame.setTitle("Computación Grafica");
 	}
 
 	}
@@ -38,6 +41,10 @@ class CenteredFrame extends JFrame {
 		setSize(widthScreen/2, heightScreen/2);
 		
 		setLocation(widthScreen/4, heightScreen/4);
+		
+		Image myIcon = myScreen.getImage("E:\\eclipse-workspace\\JavaxSwingURU\\src\\graphics\\icon.jpeg");
+		
+		setIconImage(myIcon);
 		
 		
 	}
